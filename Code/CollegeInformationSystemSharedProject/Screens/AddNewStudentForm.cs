@@ -542,7 +542,7 @@ namespace CollegeInformationSystem
             txtStudentRollNumber.Text = counter + "_" + strRollNoStudent + strStudentId;
         }
         #region Calculate Student Age ...
-        //this is test comment for github
+        
         public int[] CalculateAge(DateTime dateNow, DateTime birthDate)
         {
             int day1, month1, year1;
