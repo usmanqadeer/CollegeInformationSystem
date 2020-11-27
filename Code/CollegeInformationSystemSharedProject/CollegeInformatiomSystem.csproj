@@ -1,0 +1,509 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Xamarin.Forms.4.8.0.1687\build\Xamarin.Forms.props" Condition="Exists('packages\Xamarin.Forms.4.8.0.1687\build\Xamarin.Forms.props')" />
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\build\OpenCvSharp3-AnyCPU.props" Condition="Exists('packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\build\OpenCvSharp3-AnyCPU.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1BB9E99E-6A7D-45A2-B955-AB8185A7B481}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CollegeInformationSystem</RootNamespace>
+    <AssemblyName>CollegeInformationSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.8.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>packages\Portable.BouncyCastle.1.8.8\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="BunifuDataViz 1.0">
+      <HintPath>C:\Users\UsmanQadeer\Downloads\Sales-Dashboard-Dark-UI-master\Sales Dashboard Dark UI\bin\Debug\BunifuDataViz 1.0.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>E:\project\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\FontAwesome.Sharp.5.15.3\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>E:\project\Guna.UI-Framework-Lib-master (1)\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=1.3.1.9, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>packages\SharpZipLib.1.3.1\lib\net45\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="NPOI, Version=2.5.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>packages\NPOI.2.5.1\lib\net45\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.5.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>packages\NPOI.2.5.1\lib\net45\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.5.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>packages\NPOI.2.5.1\lib\net45\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.5.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>packages\NPOI.2.5.1\lib\net45\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\lib\net461\OpenCvSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp.Blob, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\lib\net461\OpenCvSharp.Blob.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp.CPlusPlus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>packages\OpenCVSharp.2.4.0.1\lib\OpenCvSharp.CPlusPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp.DebuggerVisualizers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>packages\OpenCVSharp.2.4.0.1\lib\OpenCvSharp.DebuggerVisualizers.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\lib\net461\OpenCvSharp.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp.Gpu, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>packages\OpenCVSharp.2.4.0.1\lib\OpenCvSharp.Gpu.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp.MachineLearning, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>packages\OpenCVSharp.2.4.0.1\lib\OpenCvSharp.MachineLearning.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp.UserInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\lib\net461\OpenCvSharp.UserInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Xamarin.Forms.4.8.0.1687\lib\netstandard2.0\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Xamarin.Forms.4.8.0.1687\lib\netstandard2.0\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Xamarin.Forms.4.8.0.1687\lib\netstandard2.0\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\AllReligion.cs" />
+    <Compile Include="Controller\CollageAdmin.cs" />
+    <Compile Include="Controller\DAEStudentMajor.cs" />
+    <Compile Include="Controller\StudentAddmissionInfo.cs" />
+    <Compile Include="Controller\StudentAssignedSubject.cs" />
+    <Compile Include="Controller\StudentDegree.cs" />
+    <Compile Include="Controller\StudentFeeInfo.cs" />
+    <Compile Include="Controller\StudentGraduationRecord.cs" />
+    <Compile Include="Controller\StudentGraduationSubject.cs" />
+    <Compile Include="Controller\StudentGuardianRecord.cs" />
+    <Compile Include="Controller\StudentIntermediateRecord.cs" />
+    <Compile Include="Controller\StudentIntermediateSubject.cs" />
+    <Compile Include="Controller\StudentMasterRecord.cs" />
+    <Compile Include="Controller\StudentMasterSubject.cs" />
+    <Compile Include="Controller\StudentMatricRecord.cs" />
+    <Compile Include="Controller\StudentMatricSubject.cs" />
+    <Compile Include="Controller\StudentPersonalInfo.cs" />
+    <Compile Include="Controller\StudentProgram.cs" />
+    <Compile Include="Controller\StudentSections.cs" />
+    <Compile Include="Controller\StudentSemester.cs" />
+    <Compile Include="Controller\StudentSession.cs" />
+    <Compile Include="Controller\StudentSubject.cs" />
+    <Compile Include="Model\AllReligion.cs" />
+    <Compile Include="Model\CollageAdmin.cs" />
+    <Compile Include="Model\DAEStudentMajor.cs" />
+    <Compile Include="Model\StudentAddmissionInfo.cs" />
+    <Compile Include="Model\StudentAssignedSubject.cs" />
+    <Compile Include="Model\StudentDegree.cs" />
+    <Compile Include="Model\StudentFeeInfo.cs" />
+    <Compile Include="Model\StudentGraduationRecord.cs" />
+    <Compile Include="Model\StudentGraduationSubject.cs" />
+    <Compile Include="Model\StudentGuardianRecord.cs" />
+    <Compile Include="Model\StudentIntermediateRecord.cs" />
+    <Compile Include="Model\StudentIntermediateSubject.cs" />
+    <Compile Include="Model\StudentMasterRecord.cs" />
+    <Compile Include="Model\StudentMasterSubject.cs" />
+    <Compile Include="Model\StudentMatricRecord.cs" />
+    <Compile Include="Model\StudentMatricSubject.cs" />
+    <Compile Include="Model\StudentPersonalInfo.cs" />
+    <Compile Include="Model\StudentProgram.cs" />
+    <Compile Include="Model\StudentSections.cs" />
+    <Compile Include="Model\StudentSemester.cs" />
+    <Compile Include="Model\StudentSession.cs" />
+    <Compile Include="Model\StudentSubject.cs" />
+    <Compile Include="Screens\DAEMajorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\DAEMajorForm.Designer.cs">
+      <DependentUpon>DAEMajorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\AddNewStudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\AddNewStudentForm.Designer.cs">
+      <DependentUpon>AddNewStudentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\AddToBlackListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\AddToBlackListForm.Designer.cs">
+      <DependentUpon>AddToBlackListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\CustomCheckboxList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Screens\CustomCheckboxList.Designer.cs">
+      <DependentUpon>CustomCheckboxList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\DashBoardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\DashBoardForm.Designer.cs">
+      <DependentUpon>DashBoardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DllImpoertAttribute.cs" />
+    <Compile Include="Screens\LogInForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\LogInForm.designer.cs">
+      <DependentUpon>LogInForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformitionDialog\DeleteMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformitionDialog\DeleteMessage.Designer.cs">
+      <DependentUpon>DeleteMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformitionDialog\ErrorMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformitionDialog\ErrorMessage.Designer.cs">
+      <DependentUpon>ErrorMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformitionDialog\WarningMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformitionDialog\WarningMessage.Designer.cs">
+      <DependentUpon>WarningMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformitionDialog\SuccessMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformitionDialog\SuccessMessage.Designer.cs">
+      <DependentUpon>SuccessMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ReligionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\ReligionForm.Designer.cs">
+      <DependentUpon>ReligionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\frmShowDataOnScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\frmShowDataOnScreen.Designer.cs">
+      <DependentUpon>frmShowDataOnScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\LoadingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\LoadingForm.Designer.cs">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Screens\StudentFeeTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\StudentFeeTypeForm.Designer.cs">
+      <DependentUpon>StudentFeeTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\StudentProgramForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\StudentProgramForm.Designer.cs">
+      <DependentUpon>StudentProgramForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\StudentSectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\StudentSectionForm.Designer.cs">
+      <DependentUpon>StudentSectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\StudentSubjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\StudentSubjectForm.Designer.cs">
+      <DependentUpon>StudentSubjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\StudentDegreeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\StudentDegreeForm.Designer.cs">
+      <DependentUpon>StudentDegreeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\StudentFeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\StudentFeeForm.Designer.cs">
+      <DependentUpon>StudentFeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\StudentRegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\StudentRegistrationForm.Designer.cs">
+      <DependentUpon>StudentRegistrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\StudentSessionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\StudentSessionForm.Designer.cs">
+      <DependentUpon>StudentSessionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\UserRegestrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\UserRegestrationForm.Designer.cs">
+      <DependentUpon>UserRegestrationForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Reports\StudentPersonslInfoReport.rdlc" />
+    <EmbeddedResource Include="Screens\DAEMajorForm.resx">
+      <DependentUpon>DAEMajorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\AddNewStudentForm.resx">
+      <DependentUpon>AddNewStudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\AddToBlackListForm.resx">
+      <DependentUpon>AddToBlackListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\CustomCheckboxList.resx">
+      <DependentUpon>CustomCheckboxList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\DashBoardForm.resx">
+      <DependentUpon>DashBoardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LogInForm.resx">
+      <DependentUpon>LogInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformitionDialog\DeleteMessage.resx">
+      <DependentUpon>DeleteMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformitionDialog\ErrorMessage.resx">
+      <DependentUpon>ErrorMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformitionDialog\WarningMessage.resx">
+      <DependentUpon>WarningMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformitionDialog\SuccessMessage.resx">
+      <DependentUpon>SuccessMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ReligionForm.resx">
+      <DependentUpon>ReligionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\frmShowDataOnScreen.resx">
+      <DependentUpon>frmShowDataOnScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LoadingForm.resx">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Screens\StudentFeeTypeForm.resx">
+      <DependentUpon>StudentFeeTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\StudentProgramForm.resx">
+      <DependentUpon>StudentProgramForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\StudentSectionForm.resx">
+      <DependentUpon>StudentSectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\StudentSubjectForm.resx">
+      <DependentUpon>StudentSubjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\StudentDegreeForm.resx">
+      <DependentUpon>StudentDegreeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\StudentFeeForm.resx">
+      <DependentUpon>StudentFeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\StudentRegistrationForm.resx">
+      <DependentUpon>StudentRegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\StudentSessionForm.resx">
+      <DependentUpon>StudentSessionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\UserRegestrationForm.resx">
+      <DependentUpon>UserRegestrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include=".editorconfig" />
+    <None Include="App.config" />
+    <None Include="libOpenCvSharpExtern.so" />
+    <None Include="OpenCvSharp.Blob.dll.config" />
+    <None Include="OpenCvSharp.CPlusPlus.dll.config" />
+    <None Include="OpenCvSharp.dll.config" />
+    <None Include="OpenCvSharp.MachineLearning.dll.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\png.webp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picSlide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Noemal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Normal2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picSlide %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-university-graduate-silhouette-with-the-cap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OpenCvSharpExtern.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Glim.png" />
+    <None Include="Resources\AddBlackList.png" />
+    <None Include="Resources\AddStudent.png" />
+    <None Include="Resources\ViewUser %282%29.png" />
+    <None Include="Resources\logout %281%29.png" />
+    <None Include="Resources\AddUser.png" />
+    <None Include="Resources\CollegeProgram.png" />
+    <None Include="Resources\StudentSection.png" />
+    <None Include="Resources\student-hat.png" />
+    <None Include="Resources\StudentSearch.png" />
+    <None Include="Resources\BlackList.png" />
+    <None Include="Resources\Registration.png" />
+    <None Include="Resources\StudentBlackList.png" />
+    <None Include="Resources\AddStodent.png" />
+    <None Include="Resources\student.png" />
+    <None Include="Resources\View %282%29.png" />
+    <None Include="Resources\ViewUser.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="guardian\image\" />
+    <Folder Include="images\admin\" />
+    <Folder Include="image\student\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\build\OpenCvSharp3-AnyCPU.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\build\OpenCvSharp3-AnyCPU.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('packages\Xamarin.Forms.4.8.0.1687\build\Xamarin.Forms.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Xamarin.Forms.4.8.0.1687\build\Xamarin.Forms.props'))" />
+    <Error Condition="!Exists('packages\Xamarin.Forms.4.8.0.1687\build\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Xamarin.Forms.4.8.0.1687\build\Xamarin.Forms.targets'))" />
+  </Target>
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <Import Project="packages\Xamarin.Forms.4.8.0.1687\build\Xamarin.Forms.targets" Condition="Exists('packages\Xamarin.Forms.4.8.0.1687\build\Xamarin.Forms.targets')" />
+</Project>

@@ -1,0 +1,12 @@
+F:\CollegeInformationSystem\Code\CollegeInformationSystem\bin\Debug\CollegeInformationSystem.exe.config
+F:\CollegeInformationSystem\Code\CollegeInformationSystem\bin\Debug\CollegeInformationSystem.exe
+F:\CollegeInformationSystem\Code\CollegeInformationSystem\bin\Debug\CollegeInformationSystem.pdb
+F:\CollegeInformationSystem\Code\CollegeInformationSystem\obj\Debug\CollegeInformationSystem.csprojAssemblyReference.cache
+F:\CollegeInformationSystem\Code\CollegeInformationSystem\obj\Debug\CollegeInformationSystem.DashBoardForm.resources
+F:\CollegeInformationSystem\Code\CollegeInformationSystem\obj\Debug\CollegeInformationSystem.Properties.Resources.resources
+F:\CollegeInformationSystem\Code\CollegeInformationSystem\obj\Debug\CollegeInformationSystem.csproj.GenerateResource.cache
+F:\CollegeInformationSystem\Code\CollegeInformationSystem\obj\Debug\CollegeInformationSystem.exe
+F:\CollegeInformationSystem\Code\CollegeInformationSystem\obj\Debug\CollegeInformationSystem.pdb
+F:\CollegeInformationSystem\Code\CollegeInformationSystem\bin\Debug\Bunifu_UI_v1.5.3.dll
+F:\CollegeInformationSystem\Code\CollegeInformationSystem\bin\Debug\Guna.UI.dll
+F:\CollegeInformationSystem\Code\CollegeInformationSystem\obj\Debug\CollegeInformationSystem.csproj.CopyComplete
