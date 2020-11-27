@@ -129,10 +129,6 @@ F:\CollegeInformationSystem\Code\CollegeInformationSystem\obj\Debug\CollegeInfor
 F:\CollegeInformationSystem\Code\CollegeInformationSystem\obj\Debug\CollegeInformationSystem.pdb
 F:\CollegeInformationSystem\Code\CollegeInformationSystem\obj\Debug\CollegeInformatiomSystem.csprojAssemblyReference.cache
 F:\CollegeInformationSystem\Code\CollegeInformationSystemSharedProject\bin\Debug\OpenCvSharpExtern.dll
-F:\CollegeInformationSystem\Code\CollegeInformationSystemSharedProject\bin\Debug\dll\x86\OpenCvSharpExtern.dll
-F:\CollegeInformationSystem\Code\CollegeInformationSystemSharedProject\bin\Debug\dll\x86\opencv_ffmpeg400.dll
-F:\CollegeInformationSystem\Code\CollegeInformationSystemSharedProject\bin\Debug\dll\x64\OpenCvSharpExtern.dll
-F:\CollegeInformationSystem\Code\CollegeInformationSystemSharedProject\bin\Debug\dll\x64\opencv_ffmpeg400_64.dll
 F:\CollegeInformationSystem\Code\CollegeInformationSystemSharedProject\bin\Debug\CollegeInformationSystem.exe.config
 F:\CollegeInformationSystem\Code\CollegeInformationSystemSharedProject\bin\Debug\CollegeInformationSystem.exe
 F:\CollegeInformationSystem\Code\CollegeInformationSystemSharedProject\bin\Debug\CollegeInformationSystem.pdb
