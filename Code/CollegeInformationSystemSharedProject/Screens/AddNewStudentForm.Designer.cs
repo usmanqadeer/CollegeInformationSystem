@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddNewStudentForm));
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.tabStudentInfo = new System.Windows.Forms.TabControl();
             this.tpgAdmissionInfo = new System.Windows.Forms.TabPage();
@@ -41,7 +39,6 @@
             this.txtRemarkAboutAdmission = new System.Windows.Forms.TextBox();
             this.lblStudentRollNumber = new System.Windows.Forms.Label();
             this.txtStudentRollNumber = new System.Windows.Forms.TextBox();
-            this.chkAdmissionSubject = new CollegeInformationSystem.CustomCheckboxList();
             this.lblStudentProgram = new System.Windows.Forms.Label();
             this.cmbStudentAdmissionProgram = new System.Windows.Forms.ComboBox();
             this.lblStudentSession = new System.Windows.Forms.Label();
@@ -92,7 +89,6 @@
             this.txtInMatricTotalMarks = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtMatricSchoolInstitute = new System.Windows.Forms.TextBox();
-            this.chkStudentMatricSelectedSubject = new CollegeInformationSystem.CustomCheckboxList();
             this.lblMatricStudentBoardInstitute = new System.Windows.Forms.Label();
             this.txtMatricStudentBoardInstitute = new System.Windows.Forms.TextBox();
             this.lblMatricStudentMajor = new System.Windows.Forms.Label();
@@ -113,7 +109,6 @@
             this.lblInterStudentPassedYear = new System.Windows.Forms.Label();
             this.txtInterPassedYear = new System.Windows.Forms.TextBox();
             this.lblInterBoardInstitute = new System.Windows.Forms.Label();
-            this.chkInterSelectedSubject = new CollegeInformationSystem.CustomCheckboxList();
             this.lblInterStudentDEAMajor = new System.Windows.Forms.Label();
             this.cmbInterStudentDEAMajor = new System.Windows.Forms.ComboBox();
             this.txtInterBoardIntitute = new System.Windows.Forms.TextBox();
@@ -137,7 +132,6 @@
             this.lblGraduationCollegeInstitute = new System.Windows.Forms.Label();
             this.txtGraduationCollegeIntitute = new System.Windows.Forms.TextBox();
             this.lblGraduationStudentBoardInstitute = new System.Windows.Forms.Label();
-            this.chkGraduationSelectedSubject = new CollegeInformationSystem.CustomCheckboxList();
             this.lblGraduationAducationSystem = new System.Windows.Forms.Label();
             this.cmbGraduationStudentEducationSystem = new System.Windows.Forms.ComboBox();
             this.txtGraduationBoardInstituteUni = new System.Windows.Forms.TextBox();
@@ -277,6 +271,10 @@
             this.btnStudentSave = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnView = new System.Windows.Forms.Button();
+            this.chkAdmissionSubject = new CollegeInformationSystem.CustomCheckboxList();
+            this.chkStudentMatricSelectedSubject = new CollegeInformationSystem.CustomCheckboxList();
+            this.chkInterSelectedSubject = new CollegeInformationSystem.CustomCheckboxList();
+            this.chkGraduationSelectedSubject = new CollegeInformationSystem.CustomCheckboxList();
             this.tabStudentInfo.SuspendLayout();
             this.tpgAdmissionInfo.SuspendLayout();
             this.tpgPersonalInfo.SuspendLayout();
@@ -414,18 +412,6 @@
             this.txtStudentRollNumber.ReadOnly = true;
             this.txtStudentRollNumber.Size = new System.Drawing.Size(269, 26);
             this.txtStudentRollNumber.TabIndex = 9;
-            // 
-            // chkAdmissionSubject
-            // 
-            this.chkAdmissionSubject.AutoScroll = true;
-            this.chkAdmissionSubject.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.chkAdmissionSubject.DataSource = null;
-            this.chkAdmissionSubject.Location = new System.Drawing.Point(402, 22);
-            this.chkAdmissionSubject.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.chkAdmissionSubject.Name = "chkAdmissionSubject";
-            this.chkAdmissionSubject.SelectedIndex = 0;
-            this.chkAdmissionSubject.Size = new System.Drawing.Size(498, 265);
-            this.chkAdmissionSubject.TabIndex = 8;
             // 
             // lblStudentProgram
             // 
@@ -798,7 +784,7 @@
             this.tabStudentEducation.Multiline = true;
             this.tabStudentEducation.Name = "tabStudentEducation";
             this.tabStudentEducation.SelectedIndex = 0;
-            this.tabStudentEducation.Size = new System.Drawing.Size(925, 473);
+            this.tabStudentEducation.Size = new System.Drawing.Size(925, 480);
             this.tabStudentEducation.TabIndex = 0;
             // 
             // tpgMatriculation
@@ -826,7 +812,7 @@
             this.tpgMatriculation.Location = new System.Drawing.Point(4, 29);
             this.tpgMatriculation.Name = "tpgMatriculation";
             this.tpgMatriculation.Padding = new System.Windows.Forms.Padding(3);
-            this.tpgMatriculation.Size = new System.Drawing.Size(917, 440);
+            this.tpgMatriculation.Size = new System.Drawing.Size(917, 447);
             this.tpgMatriculation.TabIndex = 0;
             this.tpgMatriculation.Text = "Matriculation";
             // 
@@ -939,18 +925,6 @@
             this.txtMatricSchoolInstitute.Size = new System.Drawing.Size(726, 26);
             this.txtMatricSchoolInstitute.TabIndex = 5;
             // 
-            // chkStudentMatricSelectedSubject
-            // 
-            this.chkStudentMatricSelectedSubject.AutoScroll = true;
-            this.chkStudentMatricSelectedSubject.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.chkStudentMatricSelectedSubject.DataSource = null;
-            this.chkStudentMatricSelectedSubject.Location = new System.Drawing.Point(81, 54);
-            this.chkStudentMatricSelectedSubject.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.chkStudentMatricSelectedSubject.Name = "chkStudentMatricSelectedSubject";
-            this.chkStudentMatricSelectedSubject.SelectedIndex = 0;
-            this.chkStudentMatricSelectedSubject.Size = new System.Drawing.Size(791, 192);
-            this.chkStudentMatricSelectedSubject.TabIndex = 4;
-            // 
             // lblMatricStudentBoardInstitute
             // 
             this.lblMatricStudentBoardInstitute.AutoSize = true;
@@ -1003,17 +977,17 @@
             this.tpgIntermediate.Controls.Add(this.lblInterStudentPassedYear);
             this.tpgIntermediate.Controls.Add(this.txtInterPassedYear);
             this.tpgIntermediate.Controls.Add(this.lblInterBoardInstitute);
-            this.tpgIntermediate.Controls.Add(this.chkInterSelectedSubject);
             this.tpgIntermediate.Controls.Add(this.lblInterStudentDEAMajor);
             this.tpgIntermediate.Controls.Add(this.cmbInterStudentDEAMajor);
             this.tpgIntermediate.Controls.Add(this.txtInterBoardIntitute);
             this.tpgIntermediate.Controls.Add(this.lblInterStudentMajor);
             this.tpgIntermediate.Controls.Add(this.cmbInterStudentMajor);
+            this.tpgIntermediate.Controls.Add(this.chkInterSelectedSubject);
             this.tpgIntermediate.ForeColor = System.Drawing.Color.White;
             this.tpgIntermediate.Location = new System.Drawing.Point(4, 29);
             this.tpgIntermediate.Name = "tpgIntermediate";
             this.tpgIntermediate.Padding = new System.Windows.Forms.Padding(3);
-            this.tpgIntermediate.Size = new System.Drawing.Size(917, 440);
+            this.tpgIntermediate.Size = new System.Drawing.Size(917, 447);
             this.tpgIntermediate.TabIndex = 1;
             this.tpgIntermediate.Text = "Intermediate";
             // 
@@ -1143,18 +1117,6 @@
             this.lblInterBoardInstitute.TabIndex = 6;
             this.lblInterBoardInstitute.Text = "Board/Institute";
             // 
-            // chkInterSelectedSubject
-            // 
-            this.chkInterSelectedSubject.AutoScroll = true;
-            this.chkInterSelectedSubject.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.chkInterSelectedSubject.DataSource = null;
-            this.chkInterSelectedSubject.Location = new System.Drawing.Point(88, 54);
-            this.chkInterSelectedSubject.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.chkInterSelectedSubject.Name = "chkInterSelectedSubject";
-            this.chkInterSelectedSubject.SelectedIndex = 0;
-            this.chkInterSelectedSubject.Size = new System.Drawing.Size(785, 173);
-            this.chkInterSelectedSubject.TabIndex = 5;
-            // 
             // lblInterStudentDEAMajor
             // 
             this.lblInterStudentDEAMajor.AutoSize = true;
@@ -1216,17 +1178,17 @@
             this.tpgGraduation.Controls.Add(this.lblGraduationCollegeInstitute);
             this.tpgGraduation.Controls.Add(this.txtGraduationCollegeIntitute);
             this.tpgGraduation.Controls.Add(this.lblGraduationStudentBoardInstitute);
-            this.tpgGraduation.Controls.Add(this.chkGraduationSelectedSubject);
             this.tpgGraduation.Controls.Add(this.lblGraduationAducationSystem);
             this.tpgGraduation.Controls.Add(this.cmbGraduationStudentEducationSystem);
             this.tpgGraduation.Controls.Add(this.txtGraduationBoardInstituteUni);
             this.tpgGraduation.Controls.Add(this.lblGraduationMajorSubject);
             this.tpgGraduation.Controls.Add(this.cmbGraduationMajorSubject);
+            this.tpgGraduation.Controls.Add(this.chkGraduationSelectedSubject);
             this.tpgGraduation.ForeColor = System.Drawing.Color.White;
             this.tpgGraduation.Location = new System.Drawing.Point(4, 29);
             this.tpgGraduation.Name = "tpgGraduation";
             this.tpgGraduation.Padding = new System.Windows.Forms.Padding(3);
-            this.tpgGraduation.Size = new System.Drawing.Size(917, 440);
+            this.tpgGraduation.Size = new System.Drawing.Size(917, 447);
             this.tpgGraduation.TabIndex = 2;
             this.tpgGraduation.Text = "Graduation";
             // 
@@ -1374,18 +1336,6 @@
             this.lblGraduationStudentBoardInstitute.TabIndex = 6;
             this.lblGraduationStudentBoardInstitute.Text = "Board/Uni";
             // 
-            // chkGraduationSelectedSubject
-            // 
-            this.chkGraduationSelectedSubject.AutoScroll = true;
-            this.chkGraduationSelectedSubject.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.chkGraduationSelectedSubject.DataSource = null;
-            this.chkGraduationSelectedSubject.Location = new System.Drawing.Point(104, 52);
-            this.chkGraduationSelectedSubject.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.chkGraduationSelectedSubject.Name = "chkGraduationSelectedSubject";
-            this.chkGraduationSelectedSubject.SelectedIndex = 0;
-            this.chkGraduationSelectedSubject.Size = new System.Drawing.Size(751, 151);
-            this.chkGraduationSelectedSubject.TabIndex = 5;
-            // 
             // lblGraduationAducationSystem
             // 
             this.lblGraduationAducationSystem.AutoSize = true;
@@ -1461,7 +1411,7 @@
             this.tpgMaster16.Location = new System.Drawing.Point(4, 29);
             this.tpgMaster16.Name = "tpgMaster16";
             this.tpgMaster16.Padding = new System.Windows.Forms.Padding(3);
-            this.tpgMaster16.Size = new System.Drawing.Size(917, 440);
+            this.tpgMaster16.Size = new System.Drawing.Size(917, 447);
             this.tpgMaster16.TabIndex = 3;
             this.tpgMaster16.Text = "Master (16 Year)";
             // 
@@ -1967,9 +1917,7 @@
             // reportViewerStudentAdmission
             // 
             this.reportViewerStudentAdmission.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "StudentPersonalRecordData";
-            this.reportViewerStudentAdmission.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewerStudentAdmission.LocalReport.ReportEmbeddedResource = "CollegeInformationSystem.Reports.StudentAdmissionReport.rdlc";
+            this.reportViewerStudentAdmission.LocalReport.ReportEmbeddedResource = "CollegeInformationSystem.Reports.StudentPersonslInfoReport.rdlc";
             this.reportViewerStudentAdmission.Location = new System.Drawing.Point(3, 3);
             this.reportViewerStudentAdmission.Name = "reportViewerStudentAdmission";
             this.reportViewerStudentAdmission.ServerReport.BearerToken = null;
@@ -2739,6 +2687,54 @@
             this.btnView.Text = "View";
             this.btnView.UseVisualStyleBackColor = false;
             this.btnView.Click += new System.EventHandler(this.btnView_Click);
+            // 
+            // chkAdmissionSubject
+            // 
+            this.chkAdmissionSubject.AutoScroll = true;
+            this.chkAdmissionSubject.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.chkAdmissionSubject.DataSource = null;
+            this.chkAdmissionSubject.Location = new System.Drawing.Point(402, 22);
+            this.chkAdmissionSubject.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkAdmissionSubject.Name = "chkAdmissionSubject";
+            this.chkAdmissionSubject.SelectedIndex = 0;
+            this.chkAdmissionSubject.Size = new System.Drawing.Size(498, 265);
+            this.chkAdmissionSubject.TabIndex = 8;
+            // 
+            // chkStudentMatricSelectedSubject
+            // 
+            this.chkStudentMatricSelectedSubject.AutoScroll = true;
+            this.chkStudentMatricSelectedSubject.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.chkStudentMatricSelectedSubject.DataSource = null;
+            this.chkStudentMatricSelectedSubject.Location = new System.Drawing.Point(81, 54);
+            this.chkStudentMatricSelectedSubject.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkStudentMatricSelectedSubject.Name = "chkStudentMatricSelectedSubject";
+            this.chkStudentMatricSelectedSubject.SelectedIndex = 0;
+            this.chkStudentMatricSelectedSubject.Size = new System.Drawing.Size(791, 192);
+            this.chkStudentMatricSelectedSubject.TabIndex = 4;
+            // 
+            // chkInterSelectedSubject
+            // 
+            this.chkInterSelectedSubject.AutoScroll = true;
+            this.chkInterSelectedSubject.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.chkInterSelectedSubject.DataSource = null;
+            this.chkInterSelectedSubject.Location = new System.Drawing.Point(88, 54);
+            this.chkInterSelectedSubject.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkInterSelectedSubject.Name = "chkInterSelectedSubject";
+            this.chkInterSelectedSubject.SelectedIndex = 0;
+            this.chkInterSelectedSubject.Size = new System.Drawing.Size(785, 173);
+            this.chkInterSelectedSubject.TabIndex = 5;
+            // 
+            // chkGraduationSelectedSubject
+            // 
+            this.chkGraduationSelectedSubject.AutoScroll = true;
+            this.chkGraduationSelectedSubject.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.chkGraduationSelectedSubject.DataSource = null;
+            this.chkGraduationSelectedSubject.Location = new System.Drawing.Point(104, 52);
+            this.chkGraduationSelectedSubject.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkGraduationSelectedSubject.Name = "chkGraduationSelectedSubject";
+            this.chkGraduationSelectedSubject.SelectedIndex = 0;
+            this.chkGraduationSelectedSubject.Size = new System.Drawing.Size(751, 151);
+            this.chkGraduationSelectedSubject.TabIndex = 5;
             // 
             // AddNewStudentForm
             // 
