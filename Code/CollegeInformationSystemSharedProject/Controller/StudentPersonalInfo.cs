@@ -1,5 +1,7 @@
+using CollegeInformationSystem.Model;
 using System;
 using System.Collections.Generic;
+using System.Data;
 
 public class StudentPersonalInfoController
 {
@@ -24,7 +26,6 @@ public class StudentPersonalInfoController
     {
         objStudentPersonalInfo.DeleteStudentPersonalInfo(intStudentID);
     }
-
     public static void Truncate()
     {
         objStudentPersonalInfo.Truncate();
