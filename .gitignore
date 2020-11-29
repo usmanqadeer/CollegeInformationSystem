@@ -1,0 +1,12 @@
+
+*.dll
+*.xml
+*.xaml
+*.pdb
+*.p7s
+*.targets
+*.cfg
+*.props
+*.nupkg
+*.txt
+*._
