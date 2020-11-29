@@ -1,8 +1,12 @@
-﻿using OpenCvSharp;
+﻿using CollegeInformationSystem.Model;
+using Microsoft.Reporting.WinForms;
+using Microsoft.TeamFoundation.Client.Reporting;
+using OpenCvSharp;
 using OpenCvSharp.Extensions;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Threading;
@@ -21,6 +25,7 @@ namespace CollegeInformationSystem
         int program_ID = 0;
         int degree_ID = 0;
         Int64 student_id = 0;
+        DataSet studentPersonal_DataSet;
         // Declare required methods
         private void CaptureCamera()
         {
@@ -92,9 +97,8 @@ namespace CollegeInformationSystem
         }
         private void AddStudentForm_Load(object sender, EventArgs e)
         {
+            this.reportViewerStudentAdmission.RefreshReport();
             BindingDataToComboBox();
-            
-            //StudentAdmissionInfoDataGridView.DataSource = StudentPersonalInfoController.StudentPersonalInfoSelectAll();
         }
         #region DataBindung To ComboBox From Tables......
         private void BindingDataToComboBox()
@@ -598,17 +602,15 @@ namespace CollegeInformationSystem
         private void dtpStudentDOB_ValueChanged(object sender, EventArgs e)
         {
             int[] result = CalculateAge(DateTime.Now, Convert.ToDateTime(dtpStudentDOB.Text));
-            txtCurrentAge.Text = result[0].ToString() + " Year(s) " + result[1].ToString() + " Month(s) " + result[2].ToString() + " Day(s)";
+            txtCurrentAge.Text = result[0].ToString() + " Year " + result[1].ToString() + " Month " + result[2].ToString() + " Day";
         }
         private void btnStudentEdit_Click(object sender, EventArgs e)
         {
             
         }
-
         private void cmbStudentSection_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Refresh();
-            GeneratingStudentRollNumber();
+            
         }
 
         private void txtInMatricObtainedMarks_TextChanged(object sender, EventArgs e)
@@ -657,7 +659,6 @@ namespace CollegeInformationSystem
             }
             catch (Exception) { }
         }
-
         private void cmbStudentSession_SelectedIndexChanged(object sender, EventArgs e)
         {
             int session_id = 0;
@@ -675,13 +676,17 @@ namespace CollegeInformationSystem
             }
             catch (Exception) { }
         }
-
         private void btnView_Click(object sender, EventArgs e)
         {
             reportViewerStudentAdmission.RefreshReport();
-            reportViewerStudentAdmission.Show();
+            List<StudentPersonalInfo> studentpersoninfos = StudentPersonalInfoController.StudentPersonalInfoSelectAll();
+            ListtoDataTableConverter converter = new ListtoDataTableConverter();
+            DataTable dt = converter.ToDataTable(studentpersoninfos);
+            DataSet studentDataSet_PersonalInfo = new DataSet();
+            studentDataSet_PersonalInfo.Tables.Add(dt);
             
+
+
         }
     }
 }
-
