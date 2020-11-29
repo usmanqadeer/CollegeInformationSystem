@@ -285,7 +285,6 @@ public class AllReligion
             SetError(ex.Message);
         }
     }
-
     private void SetError(string message)
     { }
 
