@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserRegestrationForm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -127,11 +127,11 @@
             // lblUserRole
             // 
             this.lblUserRole.AutoSize = true;
-            this.lblUserRole.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUserRole.ForeColor = System.Drawing.Color.White;
             this.lblUserRole.Location = new System.Drawing.Point(26, 232);
             this.lblUserRole.Name = "lblUserRole";
-            this.lblUserRole.Size = new System.Drawing.Size(77, 20);
+            this.lblUserRole.Size = new System.Drawing.Size(75, 18);
             this.lblUserRole.TabIndex = 13;
             this.lblUserRole.Text = "User Role";
             // 
@@ -147,17 +147,17 @@
             this.cmbUserRole.Location = new System.Drawing.Point(109, 230);
             this.cmbUserRole.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.cmbUserRole.Name = "cmbUserRole";
-            this.cmbUserRole.Size = new System.Drawing.Size(380, 28);
+            this.cmbUserRole.Size = new System.Drawing.Size(380, 26);
             this.cmbUserRole.TabIndex = 4;
             // 
             // lblUserSearch
             // 
             this.lblUserSearch.AutoSize = true;
-            this.lblUserSearch.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUserSearch.ForeColor = System.Drawing.Color.White;
             this.lblUserSearch.Location = new System.Drawing.Point(42, 44);
             this.lblUserSearch.Name = "lblUserSearch";
-            this.lblUserSearch.Size = new System.Drawing.Size(96, 20);
+            this.lblUserSearch.Size = new System.Drawing.Size(91, 18);
             this.lblUserSearch.TabIndex = 15;
             this.lblUserSearch.Text = "User Search";
             // 
@@ -190,11 +190,11 @@
             // lblUserCNIC
             // 
             this.lblUserCNIC.AutoSize = true;
-            this.lblUserCNIC.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserCNIC.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUserCNIC.ForeColor = System.Drawing.Color.White;
             this.lblUserCNIC.Location = new System.Drawing.Point(18, 182);
             this.lblUserCNIC.Name = "lblUserCNIC";
-            this.lblUserCNIC.Size = new System.Drawing.Size(85, 20);
+            this.lblUserCNIC.Size = new System.Drawing.Size(80, 18);
             this.lblUserCNIC.TabIndex = 9;
             this.lblUserCNIC.Text = "User CNIC";
             // 
@@ -205,17 +205,17 @@
             this.txtUserCNIC.BackColor = System.Drawing.Color.White;
             this.txtUserCNIC.Location = new System.Drawing.Point(109, 191);
             this.txtUserCNIC.Name = "txtUserCNIC";
-            this.txtUserCNIC.Size = new System.Drawing.Size(380, 26);
+            this.txtUserCNIC.Size = new System.Drawing.Size(380, 24);
             this.txtUserCNIC.TabIndex = 5;
             // 
             // lbUserlCoantact
             // 
             this.lbUserlCoantact.AutoSize = true;
-            this.lbUserlCoantact.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUserlCoantact.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbUserlCoantact.ForeColor = System.Drawing.Color.White;
             this.lbUserlCoantact.Location = new System.Drawing.Point(8, 108);
             this.lbUserlCoantact.Name = "lbUserlCoantact";
-            this.lbUserlCoantact.Size = new System.Drawing.Size(95, 20);
+            this.lbUserlCoantact.Size = new System.Drawing.Size(83, 18);
             this.lbUserlCoantact.TabIndex = 7;
             this.lbUserlCoantact.Text = "Cantect No";
             // 
@@ -227,17 +227,17 @@
             this.txtUserSearch.BackColor = System.Drawing.Color.White;
             this.txtUserSearch.Location = new System.Drawing.Point(142, 42);
             this.txtUserSearch.Name = "txtUserSearch";
-            this.txtUserSearch.Size = new System.Drawing.Size(967, 26);
+            this.txtUserSearch.Size = new System.Drawing.Size(967, 24);
             this.txtUserSearch.TabIndex = 6;
             // 
             // lblUserEmail
             // 
             this.lblUserEmail.AutoSize = true;
-            this.lblUserEmail.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUserEmail.ForeColor = System.Drawing.Color.White;
             this.lblUserEmail.Location = new System.Drawing.Point(57, 144);
             this.lblUserEmail.Name = "lblUserEmail";
-            this.lblUserEmail.Size = new System.Drawing.Size(46, 20);
+            this.lblUserEmail.Size = new System.Drawing.Size(45, 18);
             this.lblUserEmail.TabIndex = 5;
             this.lblUserEmail.Text = "Email";
             // 
@@ -248,17 +248,17 @@
             this.txtUserEmail.BackColor = System.Drawing.Color.White;
             this.txtUserEmail.Location = new System.Drawing.Point(109, 152);
             this.txtUserEmail.Name = "txtUserEmail";
-            this.txtUserEmail.Size = new System.Drawing.Size(380, 26);
+            this.txtUserEmail.Size = new System.Drawing.Size(380, 24);
             this.txtUserEmail.TabIndex = 3;
             // 
             // lblUserPassword
             // 
             this.lblUserPassword.AutoSize = true;
-            this.lblUserPassword.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUserPassword.ForeColor = System.Drawing.Color.White;
             this.lblUserPassword.Location = new System.Drawing.Point(20, 72);
             this.lblUserPassword.Name = "lblUserPassword";
-            this.lblUserPassword.Size = new System.Drawing.Size(83, 20);
+            this.lblUserPassword.Size = new System.Drawing.Size(79, 18);
             this.lblUserPassword.TabIndex = 3;
             this.lblUserPassword.Text = " Password";
             // 
@@ -269,17 +269,17 @@
             this.txtUserContactNo.BackColor = System.Drawing.Color.White;
             this.txtUserContactNo.Location = new System.Drawing.Point(109, 113);
             this.txtUserContactNo.Name = "txtUserContactNo";
-            this.txtUserContactNo.Size = new System.Drawing.Size(380, 26);
+            this.txtUserContactNo.Size = new System.Drawing.Size(380, 24);
             this.txtUserContactNo.TabIndex = 2;
             // 
             // lblUserName
             // 
             this.lblUserName.AutoSize = true;
-            this.lblUserName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUserName.ForeColor = System.Drawing.Color.White;
             this.lblUserName.Location = new System.Drawing.Point(14, 41);
             this.lblUserName.Name = "lblUserName";
-            this.lblUserName.Size = new System.Drawing.Size(89, 20);
+            this.lblUserName.Size = new System.Drawing.Size(84, 18);
             this.lblUserName.TabIndex = 1;
             this.lblUserName.Text = "User Name";
             // 
@@ -290,7 +290,7 @@
             this.txtUserPassword.BackColor = System.Drawing.Color.White;
             this.txtUserPassword.Location = new System.Drawing.Point(109, 74);
             this.txtUserPassword.Name = "txtUserPassword";
-            this.txtUserPassword.Size = new System.Drawing.Size(380, 26);
+            this.txtUserPassword.Size = new System.Drawing.Size(380, 24);
             this.txtUserPassword.TabIndex = 1;
             // 
             // txtUserName
@@ -300,7 +300,7 @@
             this.txtUserName.BackColor = System.Drawing.Color.White;
             this.txtUserName.Location = new System.Drawing.Point(109, 35);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(380, 26);
+            this.txtUserName.Size = new System.Drawing.Size(380, 24);
             this.txtUserName.TabIndex = 0;
             this.txtUserName.TabStop = false;
             this.txtUserName.Tag = "0";
@@ -321,7 +321,7 @@
             this.gbUserInformation.Controls.Add(this.lbUserlCoantact);
             this.gbUserInformation.Controls.Add(this.cmbUserRole);
             this.gbUserInformation.Controls.Add(this.txtUserRemarks);
-            this.gbUserInformation.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbUserInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbUserInformation.ForeColor = System.Drawing.Color.White;
             this.gbUserInformation.Location = new System.Drawing.Point(36, 75);
             this.gbUserInformation.Name = "gbUserInformation";
@@ -333,11 +333,11 @@
             // lblUserRemarks
             // 
             this.lblUserRemarks.AutoSize = true;
-            this.lblUserRemarks.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserRemarks.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUserRemarks.ForeColor = System.Drawing.Color.White;
             this.lblUserRemarks.Location = new System.Drawing.Point(33, 275);
             this.lblUserRemarks.Name = "lblUserRemarks";
-            this.lblUserRemarks.Size = new System.Drawing.Size(70, 20);
+            this.lblUserRemarks.Size = new System.Drawing.Size(69, 18);
             this.lblUserRemarks.TabIndex = 31;
             this.lblUserRemarks.Text = "Remarks";
             // 
@@ -349,7 +349,7 @@
             this.btnUserPictureCapture.FlatAppearance.CheckedBackColor = System.Drawing.Color.MediumAquamarine;
             this.btnUserPictureCapture.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSlateGray;
             this.btnUserPictureCapture.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUserPictureCapture.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUserPictureCapture.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUserPictureCapture.ForeColor = System.Drawing.Color.White;
             this.btnUserPictureCapture.Location = new System.Drawing.Point(565, 396);
             this.btnUserPictureCapture.Name = "btnUserPictureCapture";
@@ -367,7 +367,7 @@
             this.btnUsertPicture.FlatAppearance.CheckedBackColor = System.Drawing.Color.MediumAquamarine;
             this.btnUsertPicture.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSlateGray;
             this.btnUsertPicture.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUsertPicture.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsertPicture.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUsertPicture.ForeColor = System.Drawing.Color.White;
             this.btnUsertPicture.Location = new System.Drawing.Point(565, 337);
             this.btnUsertPicture.Name = "btnUsertPicture";
@@ -391,11 +391,11 @@
             // lblInfoCamra
             // 
             this.lblInfoCamra.AutoSize = true;
-            this.lblInfoCamra.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInfoCamra.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInfoCamra.ForeColor = System.Drawing.Color.White;
             this.lblInfoCamra.Location = new System.Drawing.Point(559, 81);
             this.lblInfoCamra.Name = "lblInfoCamra";
-            this.lblInfoCamra.Size = new System.Drawing.Size(225, 20);
+            this.lblInfoCamra.Size = new System.Drawing.Size(208, 18);
             this.lblInfoCamra.TabIndex = 39;
             this.lblInfoCamra.Text = "Cllick on Start to start camra...";
             // 
@@ -408,7 +408,7 @@
             this.btnUserDelete.FlatAppearance.CheckedBackColor = System.Drawing.Color.MediumAquamarine;
             this.btnUserDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSlateGray;
             this.btnUserDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUserDelete.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUserDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUserDelete.ForeColor = System.Drawing.Color.White;
             this.btnUserDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnUserDelete.Image")));
             this.btnUserDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -428,7 +428,7 @@
             this.btnUserView.FlatAppearance.CheckedBackColor = System.Drawing.Color.MediumAquamarine;
             this.btnUserView.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSlateGray;
             this.btnUserView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUserView.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUserView.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUserView.ForeColor = System.Drawing.Color.White;
             this.btnUserView.Image = ((System.Drawing.Image)(resources.GetObject("btnUserView.Image")));
             this.btnUserView.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -448,7 +448,7 @@
             this.btnUserEdit.FlatAppearance.CheckedBackColor = System.Drawing.Color.MediumAquamarine;
             this.btnUserEdit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSlateGray;
             this.btnUserEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUserEdit.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUserEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUserEdit.ForeColor = System.Drawing.Color.White;
             this.btnUserEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnUserEdit.Image")));
             this.btnUserEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -468,7 +468,7 @@
             this.btnUserSave.FlatAppearance.CheckedBackColor = System.Drawing.Color.MediumAquamarine;
             this.btnUserSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSlateGray;
             this.btnUserSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUserSave.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUserSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUserSave.ForeColor = System.Drawing.Color.White;
             this.btnUserSave.Image = ((System.Drawing.Image)(resources.GetObject("btnUserSave.Image")));
             this.btnUserSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -491,14 +491,14 @@
             this.UserDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UserDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.UserDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.HotTrack;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.UserDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.UserDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.UserDataGridView.ColumnHeadersHeight = 30;
             this.UserDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.UserDataGridView.EnableHeadersVisualStyles = false;
@@ -507,26 +507,26 @@
             this.UserDataGridView.Name = "UserDataGridView";
             this.UserDataGridView.ReadOnly = true;
             this.UserDataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.UserDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
-            this.UserDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.UserDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            this.UserDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.UserDataGridView.Size = new System.Drawing.Size(1106, 218);
             this.UserDataGridView.TabIndex = 44;
             // 
             // UserRegestrationForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(47)))), ((int)(((byte)(67)))));
             this.ClientSize = new System.Drawing.Size(1182, 710);
@@ -543,7 +543,7 @@
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.lblUserSearch);
             this.Controls.Add(this.txtUserSearch);
-            this.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(4);
